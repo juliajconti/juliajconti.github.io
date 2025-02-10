@@ -1,5 +1,5 @@
 ---
-title: A Test of Relational and Concrete Cognitive Biases Across Cultures and Species
+title: 	Universal foundation and plasticity of abstract reasoning across culture, age, and species
 date: 2024-07-27
 ---
 
