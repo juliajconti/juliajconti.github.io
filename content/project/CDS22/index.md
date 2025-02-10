@@ -1,13 +1,8 @@
 ---
-title: Pandas
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
-tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+title: Learning Capacity Across Species and Age to Identify Origins of Human Uniqueness
+date: 2022-10-26
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+A core unanswered question in human development is how human learning differs from that of other primate species. Previous research has hypothesized qualitative differences in learning mechanisms between species (e.g., Hauser, M. D., Chomsky, N.,  Fitch, W. T., 2002; Ferrigno, S., Huang, Y., & Cantlon, J. F., 2021). However, few studies have directly compared their basic learning capacities. An important factor in successful learning is the capacity to sustain a cognitive process, including attention and working memory required for the task. Here we test human children and non-human primates on a basic match-to-sample task to compare the extent to which lapse rate, quantifying inability to sustain a task, varies across species and age. We used Bayesian modeling to test whether accounting for lapse rates significantly improves estimates of subjects’ learning curves beyond standard logistic models, which we found to be the case for most subjects (95% credible interval for lapse = -1. 619, -1.434; -1.875, -1.564; -1.88, -1.571; -1.054, -0.657). This indicates that general processing capacity (lapse) critically should be accounted for in understanding learning trajectories. We then compare lapse rates and learning curves between primate species and age groups (3 - to 6-year-old human children) to identify key similarities and differences across populations. The data advance our understanding of the variability in capacity that gives rise to uniquely human cognition.
 
 <!--more-->
