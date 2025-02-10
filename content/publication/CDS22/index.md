@@ -25,16 +25,14 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *Cognitive Developmental Society*
+publication_short: In *CDS*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: A core unanswered question in human development is how human learning differs from that of other primate species. Previous research has hypothesized qualitative differences in learning mechanisms between species (e.g., Hauser, M. D., Chomsky, N.,  Fitch, W. T., 2002; Ferrigno, S., Huang, Y., & Cantlon, J. F., 2021). However, few studies have directly compared their basic learning capacities. An important factor in successful learning is the capacity to sustain a cognitive process, including attention and working memory required for the task. Here we test human children and non-human primates on a basic match-to-sample task to compare the extent to which lapse rate, quantifying inability to sustain a task, varies across species and age. We used Bayesian modeling to test whether accounting for lapse rates significantly improves estimates of subjects’ learning curves beyond standard logistic models, which we found to be the case for most subjects (95% credible interval for lapse = -1. 619, -1.434; -1.875, -1.564; -1.88, -1.571; -1.054, -0.657). This indicates that general processing capacity (lapse) critically should be accounted for in understanding learning trajectories. We then compare lapse rates and learning curves between primate species and age groups (3 - to 6-year-old human children) to identify key similarities and differences across populations. The data advance our understanding of the variability in capacity that gives rise to uniquely human cognition.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags:
-  - Large Language Models
+tags:''
 
 # Display this page in the Featured widget?
 featured: true
@@ -45,18 +43,18 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_source: ''
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: ''
   focal_point: ''
   preview_only: false
 
