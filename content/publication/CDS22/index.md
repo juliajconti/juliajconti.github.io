@@ -32,7 +32,6 @@ abstract: A core unanswered question in human development is how human learning 
 
 # Summary. An optional shortened abstract.
 
-tags:''
 
 # Display this page in the Featured widget?
 featured: true
