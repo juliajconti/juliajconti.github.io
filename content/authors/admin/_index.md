@@ -53,11 +53,12 @@ education:
     date_start: 2021-08-01
     date_end: 2026-05-31
     summary: 
-  - area: BSc Brain& Cognitive Science
+  - area: BSc Brain & Cognitive Science
     institution: University of Illinois Urbana-Champaign
     date_start: 2018-08-01
     date_end: 2021-12-31
     summary: 
+
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
@@ -104,6 +105,8 @@ languages:
 #     icon: coursera
 #     summary: |
 #       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+---
+
 ## About Me
 
 As of August 2021, I have joined the doctoral program in cognitive psychology at Carnegie Mellon University. I am a member of the LearnLab and the OAK Lab of the Human-Computer Interaction Institute and my research focuses on the acquisition of relational rules.
