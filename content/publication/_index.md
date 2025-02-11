@@ -1,12 +1,23 @@
 ---
-title: Publications
-cms_exclude: true
+title: 'Papers'
+date: 2024-05-19
+type: landing
 
-# View.
-view: citation
+design:
+  # Section spacing
+  spacing: '5rem'
 
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+# Page sections
+sections:
+  - block: collection
+    content:
+      title: Papers
+      text: 
+      filters:
+        folders:
+          - publication
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
 ---
