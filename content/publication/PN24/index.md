@@ -37,7 +37,7 @@ featured: true
 url_pdf: ''
 url_code: ''
 url_dataset: ''
-url_poster: 'content/publication/PN24/PsychonomConti24.pdf'
+url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
