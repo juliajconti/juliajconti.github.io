@@ -51,7 +51,7 @@ education:
   - area: PhD Cognitive Psychology
     institution: Carnegie Mellon University
     date_start: 2021-08-01
-    date_end: 2026-05-31
+    date_end: 2026-08-31
     summary: 
   - area: BSc Brain & Cognitive Science
     institution: University of Illinois Urbana-Champaign
@@ -89,9 +89,9 @@ languages:
   - name: English
     percent: 100
   - name: Italian
-    percent: 50
+    percent: 60
   - name: Spanish
-    percent: 50
+    percent: 60
 
 # Awards.
 #   Add/remove as many awards below as you like.
