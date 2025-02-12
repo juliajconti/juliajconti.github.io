@@ -21,6 +21,8 @@ removePathAccents: true
 ## ADVANCED
 ############################
 
+params:
+  show_authors: true
 build:
   writeStats: true
 enableGitInfo: false

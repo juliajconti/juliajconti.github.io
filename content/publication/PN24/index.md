@@ -8,10 +8,6 @@ authors:
 - admin
 - Ken Koedinger 
 - Paulo Carvalho
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-- "Equal contribution"
 date: '2024-11-23T00:00:00Z'
 doi: ''
 
