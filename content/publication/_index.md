@@ -12,7 +12,6 @@ sections:
   - block: collection
     content:
       title: Recent
-      text: 
       filters:
         folders:
           - publication
