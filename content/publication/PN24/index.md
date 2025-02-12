@@ -4,8 +4,7 @@ title: 'Rethinking relations- Limitations of pre-training in relational rule lea
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
-authors: 
-- admin
+authors: [admin, "Ken Koedinger", "Paulo Carvalho"]
 date: '2024-11-23T00:00:00Z'
 doi: ''
 
@@ -18,7 +17,6 @@ publishDate: '2024-11-23T00:00:00Z'
 publication_types: ['poster-conference']
 
 reading_time: false
-show_authors: true
 
 # Publication name and optional abbreviated publication name.
 publication: In *Psychonomic Society*
