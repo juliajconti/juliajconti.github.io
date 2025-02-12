@@ -5,9 +5,9 @@ title: 'Rethinking relations- Limitations of pre-training in relational rule lea
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors: 
-  - "admin"
-  - "Ken Koedinger" 
-  - "Paulo Carvalho"
+- admin
+- Ken Koedinger 
+- Paulo Carvalho
 date: '2024-11-23T00:00:00Z'
 doi: ''
 
