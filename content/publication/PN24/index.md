@@ -18,6 +18,7 @@ publishDate: '2024-11-23T00:00:00Z'
 publication_types: ['poster-conference']
 
 reading_time: false
+show_authors: true
 
 # Publication name and optional abbreviated publication name.
 publication: In *Psychonomic Society*
