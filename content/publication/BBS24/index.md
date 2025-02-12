@@ -6,7 +6,7 @@ title: 'Is core knowledge a natural subdivision of infant cognition?'
 # and it will be replaced with their full name and linked to their profile.
 authors: 
   - "Caroline Kaicher"
-  - admin
+  - "admin"
   - "Abhishek Dedhe"
   - "Lauren Aulet"
   - "Jessica Cantlon"
