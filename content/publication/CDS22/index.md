@@ -21,6 +21,8 @@ publishDate: '2022-01-01T00:00:00Z'
 # Enter a publication type from the CSL standard.
 publication_types: ['poster-conference']
 
+reading_time: false
+
 # Publication name and optional abbreviated publication name.
 publication: In *Cognitive Developmental Society*
 publication_short: In *CDS*

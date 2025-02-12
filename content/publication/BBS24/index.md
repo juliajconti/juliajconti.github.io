@@ -26,6 +26,8 @@ publication_types: ['article-journal']
 publication: In *Behavioral and Brain Sciences*
 publication_short: In *BBS*
 
+reading_time: false
+
 abstract: We examine Spelke's core knowledge taxonomy and test its boundaries. We ask whether Spelke's core knowledge is a distinct type of cognition in the sense that the cognitive processes it includes and excludes are biologically and mechanically coherent.
 
 # Summary. An optional shortened abstract.

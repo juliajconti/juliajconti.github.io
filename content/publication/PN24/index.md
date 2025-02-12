@@ -6,8 +6,6 @@ title: 'Rethinking relations- Limitations of pre-training in relational rule lea
 # and it will be replaced with their full name and linked to their profile.
 authors: 
 - admin
-- Ken Koedinger 
-- Paulo Carvalho
 date: '2024-11-23T00:00:00Z'
 doi: ''
 
@@ -18,6 +16,8 @@ publishDate: '2024-11-23T00:00:00Z'
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
 publication_types: ['poster-conference']
+
+reading_time: false
 
 # Publication name and optional abbreviated publication name.
 publication: In *Psychonomic Society*
