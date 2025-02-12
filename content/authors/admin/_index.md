@@ -56,7 +56,7 @@ education:
   - area: BSc Brain & Cognitive Science
     institution: University of Illinois Urbana-Champaign
     date_start: 2018-08-01
-    date_end: 2021-12-31
+    date_end: 2020-12-31
     summary: 
 
 # Skills
@@ -109,8 +109,6 @@ languages:
 
 ## About Me
 
-As of August 2021, I have joined the doctoral program in cognitive psychology at Carnegie Mellon University. I am a member of the LearnLab and the OAK Lab of the Human-Computer Interaction Institute and my research focuses on the acquisition of relational rules.
+As of August 2021, I have joined the doctoral program in cognitive psychology at Carnegie Mellon University. I am a member of the [LearnLab](https://learnlab.org) and the [OAK Lab](https://www.theoaklab.org/) of the Human-Computer Interaction Institute and my research focuses on the acquisition of relational rules.
 
 Relations, as widespread and important as they are, require a multi-faceted method of investigation. I do so by applying computational models of learning to the experimental behavior of adults, children, and non-human primates alike.
-
-Further information including my background, ongoing projects, art, and CV can be found on this site. Thank you for visiting!
