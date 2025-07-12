@@ -7,7 +7,7 @@ title: 'What’s going on? Surprising difficulties in complex relational rule di
 authors: [admin, "Ken Koedinger", "Paulo Carvalho"]
 date: '2025-08-01T00:00:00Z'
 doi: ''
-bibliography: cite.bib
+#bibliography: cite.bib
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2025-07-11T00:00:00Z'
