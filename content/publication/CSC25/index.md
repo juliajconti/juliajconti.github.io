@@ -4,10 +4,13 @@ title: 'What’s going on? Surprising difficulties in complex relational rule di
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
-authors: [admin, "Ken Koedinger", "Paulo Carvalho"]
+authors:
+  - Julia Conti
+  - Ken Koedinger
+  - Paulo Carvalho
 date: '2025-08-01T00:00:00Z'
 doi: ''
-#bibliography: cite.bib
+bibliography: cite.bib
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2025-07-11T00:00:00Z'
@@ -15,8 +18,8 @@ publishDate: '2025-07-11T00:00:00Z'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['poster-conference']
-
+publication_types: ["3"]
+type: publication
 reading_time: false
 
 # Publication name and optional abbreviated publication name.
