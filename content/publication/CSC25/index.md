@@ -18,8 +18,8 @@ publishDate: '2025-07-11T00:00:00Z'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["3"]
-type: publication
+publication_types: ['poster-conference']
+
 reading_time: false
 
 # Publication name and optional abbreviated publication name.
@@ -33,6 +33,7 @@ abstract: "In the present study, we create an analog of a math task for judging 
 
 # Display this page in the Featured widget?
 featured: true
+type: publication
 
 # Custom links (uncomment lines below)
 # links:

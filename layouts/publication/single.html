@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ partial "page_header.html" . }}
+
+  <div class="article-container">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Params.authors }}
+      <p class="article-authors" style="font-size: 1.1rem; font-weight: 500;">
+        {{ delimit . " · " }}
+      </p>
+    {{ end }}
+
+    {{ partial "page_content.html" . }}
+  </div>
+{{ end }}
