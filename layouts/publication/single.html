@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ partial "page_header.html" . }}
-
   <div class="article-container">
     <h1>{{ .Title }}</h1>
 
@@ -10,6 +8,12 @@
       </p>
     {{ end }}
 
-    {{ partial "page_content.html" . }}
+    {{ with .Params.date }}
+      <p class="article-date" style="color: var(--text-muted); margin-bottom: 2rem;">
+        {{ . | time.Format "January 2, 2006" }}
+      </p>
+    {{ end }}
+
+    {{ .Content }}
   </div>
 {{ end }}
