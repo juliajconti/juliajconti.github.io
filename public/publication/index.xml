@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Papers | </title>
-    <link>/publication/</link>
-      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>//localhost:1313/publication/</link>
+      <atom:link href="//localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Papers</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu_2189b6a771c6a6ef.png</url>
+      <url>//localhost:1313/media/icon_hu_2189b6a771c6a6ef.png</url>
       <title>Papers</title>
-      <link>/publication/</link>
+      <link>//localhost:1313/publication/</link>
     </image>
     
     <item>
       <title>What’s going on? Surprising difficulties in complex relational rule discovery</title>
-      <link>/publication/csc25/</link>
+      <link>//localhost:1313/publication/csc25/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/publication/csc25/</guid>
+      <guid>//localhost:1313/publication/csc25/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rethinking relations- Limitations of pre-training in relational rule learning</title>
-      <link>/publication/pn24/</link>
+      <link>//localhost:1313/publication/pn24/</link>
       <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/publication/pn24/</guid>
+      <guid>//localhost:1313/publication/pn24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Is core knowledge a natural subdivision of infant cognition?</title>
-      <link>/publication/bbs24/</link>
+      <link>//localhost:1313/publication/bbs24/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/publication/bbs24/</guid>
+      <guid>//localhost:1313/publication/bbs24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Capacity Across Species and Age to Identify Origins of Human Uniqueness</title>
-      <link>/publication/cds22/</link>
+      <link>//localhost:1313/publication/cds22/</link>
       <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/publication/cds22/</guid>
+      <guid>//localhost:1313/publication/cds22/</guid>
       <description></description>
     </item>
     
