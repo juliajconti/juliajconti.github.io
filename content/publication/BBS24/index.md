@@ -28,7 +28,7 @@ publication_short: In *BBS*
 
 reading_time: false
 
-abstract: We examine Spelke's core knowledge taxonomy and test its boundaries. We ask whether Spelke's core knowledge is a distinct type of cognition in the sense that the cognitive processes it includes and excludes are biologically and mechanically coherent.
+abstract: We examine Spelke's core knowledge taxonomy and test its boundaries. We ask whether Spelke's core knowledge is a distinct type of cognition in the sense that the cognitive processes it includes and excludes are biologically and mechanically coherent. 
 
 # Summary. An optional shortened abstract.
 
@@ -37,9 +37,9 @@ abstract: We examine Spelke's core knowledge taxonomy and test its boundaries. W
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: PubMed Link
+  url: https://pubmed.ncbi.nlm.nih.gov/38934427/
 
 url_pdf: ''
 url_code: ''
