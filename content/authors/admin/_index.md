@@ -77,8 +77,6 @@ education:
 #       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
 ---
 
-## About Me
-
 As of August 2021, I have joined the doctoral program in cognitive psychology at Carnegie Mellon University. I am a member of the [LearnLab](https://learnlab.org) and the [OAK Lab](https://www.theoaklab.org/) of the Human-Computer Interaction Institute and my research focuses on the acquisition of relational rules.
 
 Relations, as widespread and important as they are, require a multi-faceted method of investigation. I do so by applying computational models of learning to the experimental behavior of adults, children, and non-human primates alike.
