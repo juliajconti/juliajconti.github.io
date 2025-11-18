@@ -29,6 +29,14 @@
     </item>
     
     <item>
+      <title>Its all shapes to me: Blocking aids discovery of complex relational structures</title>
+      <link>//localhost:1313/publication/pn25/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/pn25/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>What’s going on? Surprising difficulties in complex relational rule discovery</title>
       <link>//localhost:1313/publication/csc25/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
@@ -227,7 +235,7 @@
 
 
 
-&lt;div id=&#34;chart-435986271&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-389271456&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -245,7 +253,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-435986271&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-389271456&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
