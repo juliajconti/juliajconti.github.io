@@ -4,7 +4,10 @@ title: 'Its all shapes to me: Blocking aids discovery of complex relational stru
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
-authors: [admin, "Ken Koedinger", "Paulo Carvalho"]
+authors:
+- admin
+- "Ken Koedinger"
+- "Paulo Carvalho"
 date: '2025-11-17T00:00:00Z'
 doi: ''
 
