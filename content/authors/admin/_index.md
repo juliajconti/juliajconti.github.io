@@ -59,28 +59,6 @@ education:
     date_end: 2020-12-31
     summary: 
 
-work:
-  - position: TA – Human Information Processing and Artificial Intelligence
-    company: Carnegie Mellon University
-    supervisor: John R. Anderson
-    date_start: 2025-08-01
-    date_end: 2025-12-31
-    summary: Carnegie Mellon University, Supervised by John R. Anderson
-
-  - position: TA – Principles of Child Development
-    company: Carnegie Mellon University
-    supervisor: Sharon Carver
-    date_start: 2024-08-01
-    date_end: 2024-12-31
-    summary: Carnegie Mellon University, Supervised by Sharon Carver
-
-  - position: TA – Human Information Processing and Artificial Intelligence
-    company: Carnegie Mellon University
-    supervisor: John R. Anderson
-    date_start: 2022-08-01
-    date_end: 2022-12-31
-    summary: Carnegie Mellon University, Supervised by John R. Anderson
-
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 
