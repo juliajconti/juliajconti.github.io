@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Doctoral Student
+role: Doctoral Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -38,13 +38,13 @@ profiles:
   - icon: brands/github
     url: https://github.com/juliajconti
   - icon: brands/linkedin
-    url: https://www.linkedin.com/juliajconti
+    url: https://www.linkedin.com/in/juliajconti/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=1N84zYkAAAAJ&hl=en&inst=3203679203499159833
 
 interests:
   - Relational Reasoning
-  - Rule Learning
+  - Discovery Learning
   - Cognitive Development
 
 education:
