@@ -235,7 +235,7 @@
 
 
 
-&lt;div id=&#34;chart-319476285&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-264953187&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -253,7 +253,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-319476285&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-264953187&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -853,6 +853,15 @@ Parallel 4   :         des6, after des4, 1d
       <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/publication/cds22/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Play</title>
+      <link>//localhost:1313/play/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/play/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
     </item>
     
   </channel>
