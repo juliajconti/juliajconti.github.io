@@ -1,5 +1,5 @@
 ---
-title: "What's going on? Surprising difficulties in complex relational rule discovery"
+title: "Confidence in Context: How Self-Beliefs Shape Discovery"
 
 authors:
   - admin
