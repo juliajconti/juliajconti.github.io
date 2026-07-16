@@ -2,81 +2,67 @@
 # Display name
 title: Julia J. Conti
 
-# Name pronunciation (optional)
-name_pronunciation:
-
 # Full name (for SEO)
 first_name: Julia
 last_name: Conti
 
-# Status emoji
-status:
-  icon: 
-
 # Is this the primary user of the site?
 superuser: true
-
-# Highlight the author in author lists? (true/false)
-highlight_name: true
 
 # Role/position/tagline
 role: Doctoral Candidate
 
-# Organizations/Affiliations to display in Biography blox
+# Organizations/Affiliations to show in About widget
 organizations:
   - name: Carnegie Mellon University
-    url: 
+    url: ''
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-profiles:
-  - icon: at-symbol
-    url: 'mailto:juliajconti@gmail.com'
-    label: E-mail Me
-  - icon: brands/instagram
-    url: https://www.instagram.com/juliajconti
-  - icon: brands/github
-    url: https://github.com/juliajconti
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/juliajconti/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=1N84zYkAAAAJ&hl=en&inst=3203679203499159833
+# Short bio (displayed in user profile if bio: true)
+bio: I study relational reasoning, discovery learning, and cognitive development.
 
+# Interests to show in About widget
 interests:
   - Relational Reasoning
   - Discovery Learning
   - Cognitive Development
 
+# Education to show in About widget
 education:
-  - area: PhD Cognitive Psychology
-    institution: Carnegie Mellon University
-    date_start: 2021-08-01
-    date_end: 2026-08-31
-    summary: 
-  - area: BSc Brain & Cognitive Science
-    institution: University of Illinois Urbana-Champaign
-    date_start: 2018-08-01
-    date_end: 2020-12-31
-    summary: 
+  courses:
+    - course: PhD Cognitive Psychology
+      institution: Carnegie Mellon University
+      year: 2026
+    - course: BSc Brain & Cognitive Science
+      institution: University of Illinois Urbana-Champaign
+      year: 2020
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
+# Social/Academic Networking links
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:juliajconti@gmail.com'
+    display:
+      header: true
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=1N84zYkAAAAJ&hl=en&inst=3203679203499159833
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/juliajconti
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/juliajconti/
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/juliajconti
 
+# Highlight the author in author lists? (true/false)
+highlight_name: true
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-# awards:
-#   - title: Neural Networks and Deep Learning
-#     url: https://www.coursera.org/learn/neural-networks-deep-learning
-#     date: '2023-11-25'
-#     awarder: Coursera
-#     icon: coursera
-#     summary: |
-#       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+# Email (used for contact form, if enabled)
+email: juliajconti@gmail.com
 ---
 
-As of August 2021, I have joined the doctoral program in cognitive psychology at Carnegie Mellon University. I am a member of the [LearnLab](https://learnlab.org) and the [OAK Lab](https://www.theoaklab.org/) of the Human-Computer Interaction Institute and my research focuses on the acquisition of relational rules.
+I am a doctoral candidate in cognitive psychology at Carnegie Mellon University and a member of the [LearnLab](https://learnlab.org) and the [OAK Lab](https://www.theoaklab.org/) in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain & Cognitive Science from the University of Illinois, Urbana-Champaign. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
 
-Relations, as widespread and important as they are, require a multi-faceted method of investigation. I do so by applying computational models of learning to the experimental behavior of adults, children, and non-human primates alike.
+Over the past five years this work has investigated the environments that facilitate discovery for adults, children, and non-human primates. My dissertation work specifically examines how metacognitive factors like certainty in the information available shape the way learners navigate a problem and regulate their own discovery process.

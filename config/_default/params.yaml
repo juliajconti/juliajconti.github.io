@@ -1,12 +1,16 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# SITE SETUP — wowchemy/Academic v5
+# Keeps Julia's existing aesthetic: emerald color, Montserrat font
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  theme_day: custom
+  theme_night: custom
+  font: custom
+  font_size: L
+
+# Colors — emerald accent to match current site
+colors:
+  primary: '#008080'
 
 # SEO
 marketing:
@@ -14,14 +18,11 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'Doctoral Candidate in Cognitive Psychology at Carnegie Mellon University'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
   verification:
     google: ''
     baidu: ''
@@ -30,17 +31,38 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "navbar"
-    fixed_to_top: true
+    align: l
+    show_logo: true
     show_search: true
-    show_theme_chooser: true
-    logo:
-      text: "Julia J. Conti"
+    show_day_night: true
+    highlight_active_link: true
+    show_language: false
+
+# Contact
+email: juliajconti@gmail.com
+
+# Social
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:juliajconti@gmail.com'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=1N84zYkAAAAJ&hl=en&inst=3203679203499159833
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/juliajconti
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/juliajconti/
+  - icon: instagram
+    icon_pack: fab
+    link: https://www.instagram.com/juliajconti
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Julia J. Conti. This work is licensed under {license}'
+    notice: '© {year} Julia J. Conti. Licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -58,3 +80,15 @@ features:
     enable: false
   privacy_pack:
     enable: false
+  repository:
+    url: 'https://github.com/juliajconti/juliajconti.github.io'
+    branch: main
+    content_dir: ''
+
+# Comments
+comments:
+  provider: ''
+
+# Search
+search:
+  provider: wowchemy

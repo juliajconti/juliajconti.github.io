@@ -1,0 +1,9 @@
+{{/* Authors — no links, bold Julia J. Conti only */}}
+{{ range $i, $author := .Params.authors }}
+  {{- if $i }}, {{ end -}}
+  {{- if or (eq $author "admin") (eq $author "Julia J. Conti") -}}
+    <strong>Julia J. Conti</strong>
+  {{- else -}}
+    {{ $author }}
+  {{- end -}}
+{{ end }}

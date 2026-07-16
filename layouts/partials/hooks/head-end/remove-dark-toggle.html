@@ -1,0 +1,16 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Exact class from DOM inspection
+  document.querySelectorAll('.theme-dropdown').forEach(function(el) { el.remove(); });
+  // Aria-label patterns
+  document.querySelectorAll('a[aria-label*="preference"], a[aria-label*="dark"], a[aria-label*="light"], a[aria-label*="mode"]').forEach(function(el) {
+    var li = el.closest('li');
+    if (li) li.remove(); else el.remove();
+  });
+  // ID patterns
+  ['dark-mode-toggle','js-dark-toggle'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.remove();
+  });
+});
+</script>

@@ -1,0 +1,10 @@
+{{/* Render publication authors, bolding admin */}}
+{{ $authors := .Params.authors }}
+{{ range $i, $author := $authors }}
+  {{- if $i }}, {{ end -}}
+  {{- if eq $author "admin" -}}
+    <strong>Julia J. Conti</strong>
+  {{- else -}}
+    {{ $author }}
+  {{- end -}}
+{{ end }}.

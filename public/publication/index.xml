@@ -1,54 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Papers | </title>
-    <link>//localhost:1313/publication/</link>
-      <atom:link href="//localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Papers</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
+    <title>Publications | Julia J. Conti</title>
+    <link>http://localhost:1313/publication/</link>
+      <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 24 Jul 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_2189b6a771c6a6ef.png</url>
-      <title>Papers</title>
-      <link>//localhost:1313/publication/</link>
+      <url>http://localhost:1313/media/icon_hu_fb4583265b5d4c48.png</url>
+      <title>Publications</title>
+      <link>http://localhost:1313/publication/</link>
     </image>
     
     <item>
-      <title>Its all shapes to me: Blocking aids discovery of complex relational structures</title>
-      <link>//localhost:1313/publication/pn25/</link>
+      <title>What&#39;s going on? Surprising difficulties in complex relational rule discovery</title>
+      <link>http://localhost:1313/publication/csc26/</link>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/csc26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>It&#39;s all shapes to me: Blocking aids discovery of complex relational structures</title>
+      <link>http://localhost:1313/publication/pn25/</link>
       <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/pn25/</guid>
+      <guid>http://localhost:1313/publication/pn25/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>What’s going on? Surprising difficulties in complex relational rule discovery</title>
-      <link>//localhost:1313/publication/csc25/</link>
+      <title>What&#39;s going on? Surprising difficulties in complex relational rule discovery</title>
+      <link>http://localhost:1313/publication/csc25/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/csc25/</guid>
+      <guid>http://localhost:1313/publication/csc25/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rethinking relations- Limitations of pre-training in relational rule learning</title>
-      <link>//localhost:1313/publication/pn24/</link>
+      <title>Rethinking relations: Limitations of pre-training in relational rule learning</title>
+      <link>http://localhost:1313/publication/pn24/</link>
       <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/pn24/</guid>
+      <guid>http://localhost:1313/publication/pn24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Is core knowledge a natural subdivision of infant cognition?</title>
-      <link>//localhost:1313/publication/bbs24/</link>
+      <link>http://localhost:1313/publication/bbs24/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/bbs24/</guid>
+      <guid>http://localhost:1313/publication/bbs24/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Capacity Across Species and Age to Identify Origins of Human Uniqueness</title>
-      <link>//localhost:1313/publication/cds22/</link>
+      <link>http://localhost:1313/publication/cds22/</link>
       <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/cds22/</guid>
+      <guid>http://localhost:1313/publication/cds22/</guid>
       <description></description>
     </item>
     

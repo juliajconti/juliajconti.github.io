@@ -1,0 +1,175 @@
+{{ define "main" }}
+
+{{/* ── About / Bio ── */}}
+{{ with site.GetPage "/authors/admin" }}
+{{ $banner := resources.Get "media/banner-180.jpg" }}
+<div id="about" style="background-color: #27272a; {{ with $banner }}background-image: url('{{ .RelPermalink }}'); background-size: cover; background-position: center;{{ end }} min-height: 40vh; padding: 4rem 0 3rem 0;">
+  <div class="container">
+    <div class="row" style="padding-top: 8%;">
+      <div class="col-12 col-lg-4" style="padding: 0 2rem; text-align: center; margin-top: -3%;">
+        <div id="profile" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          {{ $avatar := .Resources.ByType "image" }}
+          {{ with $avatar }}
+            {{ with (index . 0) }}
+              <img class="avatar avatar-circle" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+            {{ end }}
+          {{ else }}
+            <img class="avatar avatar-circle" src="{{ "authors/admin/avatar.jpg" | relURL }}" alt="{{ $.Title }}">
+          {{ end }}
+
+          <div class="portrait-title">
+            <h2>{{ .Title }}</h2>
+            {{ with .Params.role }}<h3>{{ . }}</h3>{{ end }}
+            {{ range .Params.organizations }}
+              <h3>
+                {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+                {{ .name }}
+                {{ if .url }}</a>{{ end }}
+              </h3>
+            {{ end }}
+          </div>
+
+          <ul class="network-icon" aria-hidden="true">
+            {{ range .Params.social }}
+            <li>
+              <a href="{{ .link }}"{{ if strings.HasPrefix .link "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .icon }}">
+                <i class="{{ .icon_pack }} fa-{{ .icon }} big-icon"></i>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-7" style="padding: 0 2rem;">
+        <div id="about-text">
+          <div class="article-style" style="font-size: 0.8rem;">
+            {{ .Content }}
+          </div>
+          {{- /* Interests and Education commented out — remove comments to restore
+          <div class="row">
+            {{ with .Params.interests }}
+            <div class="col-md-5">
+              <h3>Interests</h3>
+              <ul class="ul-interests" style="font-size: 0.92rem;">
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            </div>
+            {{ end }}
+            {{ with .Params.education }}
+            <div class="col-md-7">
+              <h3>Education</h3>
+              <ul class="ul-edu fa-ul" style="font-size: 0.92rem;">
+                {{ range .courses }}
+                <li>
+                  <i class="fa-li fas fa-graduation-cap"></i>
+                  <div class="description">
+                    <p class="course">{{ .course }}</p>
+                    <p class="institution">{{ .institution }}</p>
+                  </div>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }}
+          </div>
+          */ -}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{/* ── Research / Publications — nogsky-style grid cards ── */}}
+{{ $publications := where site.RegularPages "Type" "publication" }}
+{{ $sorted := sort $publications ".Date" "desc" }}
+{{ if $sorted }}
+<div class="home-section" id="research" style="padding: 4rem 0;">
+  <div class="container">
+    <div class="row" style="margin-bottom: 2rem; padding: 0 2rem;">
+      <div class="col-12">
+        <h1 style="margin: 0;">Research</h1>
+      </div>
+    </div>
+    <div id="pub-masonry" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 0 2rem; align-items: start;">
+      {{ range $sorted }}
+      {{ $images := .Resources.ByType "image" }}
+      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+          {{ with $images }}
+            {{ with (index . 0) }}
+            <a href="{{ $.RelPermalink }}">
+              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}"
+                style="width: 100%; height: 200px; object-fit: cover; display: block;">
+            </a>
+            {{ end }}
+          {{ end }}
+          <div style="padding: 1.25rem;">
+            <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
+              <a href="{{ .RelPermalink }}" style="color: #00a8a8;">{{ .Title }}</a>
+            </h3>
+            <div style="font-size: 0.82rem; color: #a1a1aa; margin-bottom: 0.6rem;">
+              {{ partial "pub_authors" . }}
+              <em>{{ .Params.publication }}</em>{{ with .Params.date }}, {{ (time .).Year }}{{ end }}.
+            </div>
+            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+              {{ with .Params.url_pdf }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}">PDF</a>{{ end }}
+              {{ with .Params.doi }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+              {{ range .Params.links }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .url }}" target="_blank">{{ .name }}</a>{{ end }}
+            </div>
+          </div>
+      </div>
+      {{ end }}
+    </div>
+
+<script>
+// Masonry layout — keeps left-to-right order, removes row gaps
+function masonryLayout() {
+  var grid = document.getElementById('pub-masonry');
+  if (!grid) return;
+  var cols = 3;
+  var colHeights = [0, 0, 0];
+  var gap = 32; // 2rem in px
+  var colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
+
+  grid.style.position = 'relative';
+  grid.style.display = 'block';
+
+  var cards = grid.querySelectorAll('.pub-card');
+  var totalHeight = 0;
+
+  cards.forEach(function(card, i) {
+    var col = i % cols;
+    var top = colHeights[col];
+    var left = col * (colWidth + gap);
+
+    card.style.position = 'absolute';
+    card.style.width = colWidth + 'px';
+    card.style.top = top + 'px';
+    card.style.left = left + 'px';
+
+    colHeights[col] += card.offsetHeight + gap;
+    totalHeight = Math.max(totalHeight, colHeights[col]);
+  });
+
+  grid.style.height = totalHeight + 'px';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait for images to load before calculating heights
+  var imgs = document.querySelectorAll('#pub-masonry img');
+  var loaded = 0;
+  if (imgs.length === 0) { masonryLayout(); return; }
+  imgs.forEach(function(img) {
+    if (img.complete) { loaded++; if (loaded === imgs.length) masonryLayout(); }
+    else { img.addEventListener('load', function() { loaded++; if (loaded === imgs.length) masonryLayout(); }); }
+  });
+});
+
+window.addEventListener('resize', masonryLayout);
+</script>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

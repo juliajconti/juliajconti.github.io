@@ -1,3 +1,236 @@
+// ── Fonts ──────────────────────────────────────────────────────────────────
+html, body, h1, h2, h3, h4, h5, h6,
+.navbar, .navbar-brand, .nav-link {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+// ── Color variables ────────────────────────────────────────────────────────
+:root {
+  --body-bg: #27272a;
+  --body-bg-alt: #2e2e32;
+  --navbar-bg: #1c1c1f;
+  --link-color: #00a8a8;
+  --heading-color: #e6edf3;
+  --text-color: #c9d1d9;
+  --muted-color: #a1a1aa;
+  --border-color: #3f3f46;
+}
+
+// ── Remove ALL borders/outlines/shadows from page structure ────────────────
+html, body, .page-body, #about, .home-section,
+.navbar, footer, .site-footer, nav, header {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+// ── Base ───────────────────────────────────────────────────────────────────
+html, body {
+  background-color: var(--body-bg) !important;
+  color: var(--text-color) !important;
+}
+
+// ── Navbar ─────────────────────────────────────────────────────────────────
+.navbar, .navbar-light {
+  background-color: var(--navbar-bg) !important;
+}
+
+.navbar-brand {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: var(--heading-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--link-color) !important;
+}
+
+// ── Hide dark mode toggle — exact selector from DOM inspection ────────────
+.js-dark-toggle,
+#dark-mode-toggle,
+[id="dark-mode-toggle"],
+li.nav-item.dropdown.theme-dropdown,
+.theme-dropdown,
+a[aria-label="Display preferences"],
+a[data-toggle="dropdown"][aria-label*="preference"],
+.theme-toggle,
+[class*="dark-toggle"],
+[class*="theme-toggle"],
+li.nav-item:has(> a[aria-label*="dark"]),
+li.nav-item:has(> a[aria-label*="light"]),
+li.nav-item:has(> a[aria-label*="mode"]),
+li.nav-item:has(> a[aria-label*="preference"]) {
+  display: none !important;
+}
+
+// ── Sections ───────────────────────────────────────────────────────────────
+.home-section {
+  background-color: var(--body-bg) !important;
+  color: var(--text-color) !important;
+}
+
+// ── Typography ─────────────────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color) !important;
+}
+
+a, a:visited,
+body a, .article-style a,
+#about a, .home-section a,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00a8a8 !important;
+}
+
+a:hover, body a:hover {
+  color: #00bfbf !important;
+}
+
+.article-style, .article-metadata, .stream-item {
+  color: var(--text-color) !important;
+}
+
+// ── Buttons ────────────────────────────────────────────────────────────────
+.btn-outline-primary {
+  color: var(--link-color) !important;
+  border-color: var(--link-color) !important;
+  background: transparent !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--link-color) !important;
+  color: #fff !important;
+}
+
+// ── About section text (over banner image) ─────────────────────────────────
+#about,
+#about h2, #about h3, #about p, #about li,
+#about .article-style,
+#about .ul-interests li,
+#about .ul-edu .description p {
+  color: #fff !important;
+}
+
+#about .network-icon a {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+#about .network-icon a:hover {
+  color: #fff !important;
+}
+
+// ── Section headings ───────────────────────────────────────────────────────
+.section-heading h1 {
+  color: var(--heading-color) !important;
+}
+
+// ── Footer ─────────────────────────────────────────────────────────────────
+footer, .site-footer {
+  background-color: var(--navbar-bg) !important;
+  color: var(--muted-color) !important;
+  padding: 1.5rem 0 !important;
+  border-top: 1px solid var(--border-color) !important;
+}
+
+footer a, .site-footer a {
+  color: var(--link-color) !important;
+}
+
+// ── Hide email/icon tooltips ───────────────────────────────────────────────
+.network-icon li a::after,
+.network-icon li a::before {
+  display: none !important;
+}
+
+// ── Research cards — prevent grid item stretching ─────────────────────────
+#research > .container > div > div {
+  height: fit-content !important;
+}
+
+#profile .avatar {
+  width: 75% !important;
+  height: auto !important;
+  border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+#profile .portrait-title h2 {
+  font-size: 1.1rem !important;
+}
+
+#profile .portrait-title h3 {
+  font-size: 0.8rem !important;
+}
+
+#profile .network-icon .fas,
+#profile .network-icon .fab,
+#profile .network-icon .ai {
+  font-size: 1.1rem !important;
+}
+
+// ── Force teal links — override wowchemy theme at highest specificity ───────
+html body a,
+html body a:visited,
+html body a:link,
+html body .article-style a,
+html body #about a,
+html body .home-section a,
+html body .navbar-light .navbar-nav .nav-link:hover,
+html body .btn-outline-primary,
+html body .pub-card a {
+  color: #00a8a8 !important;
+}
+
+html body a:hover {
+  color: #00bfbf !important;
+}
+
+html body .btn-outline-primary {
+  border-color: #00a8a8 !important;
+  background: transparent !important;
+}
+
+html body .btn-outline-primary:hover {
+  background-color: #00a8a8 !important;
+  color: #fff !important;
+}
+
+// ── Publication pages — author names not clickable ─────────────────────────
+[data-type="publication"] .article-metadata a[href*="/authors/"] {
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+// ── Publication pages only — scale down headers ────────────────────────────
+// Scoped to [data-type="publication"] so homepage h1 is unaffected
+[data-type="publication"] h1,
+[data-type="publication"] .article-title,
+[data-type="publication"] .pub-title,
+[data-type="publication"] .page-title {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+[data-type="publication"] .article-style h1 { font-size: 1.15rem !important; }
+[data-type="publication"] .article-style h2 { font-size: 1.05rem !important; }
+[data-type="publication"] .article-style h3 { font-size: 1rem !important; }
+
+[data-type="publication"] .pub-details h3,
+[data-type="publication"] .pub-details h2,
+[data-type="publication"] [class*="pub"] h2,
+[data-type="publication"] [class*="pub"] h3 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.2rem !important;
+}
+
+// ── Play page ──────────────────────────────────────────────────────────────
 .play-page iframe {
   min-height: 85vh;
   width: 100%;

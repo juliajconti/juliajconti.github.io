@@ -1,0 +1,17 @@
+[light]
+  primary = "#00a8a8"
+  menu_primary = "#1c1c1f"
+  menu_text = "#e6edf3"
+  menu_text_active = "#00a8a8"
+  menu_title = "#e6edf3"
+  home_section_odd = "#27272a"
+  home_section_even = "#2e2e32"
+
+[dark]
+  primary = "#00a8a8"
+  menu_primary = "#1c1c1f"
+  menu_text = "#e6edf3"
+  menu_text_active = "#00a8a8"
+  menu_title = "#e6edf3"
+  home_section_odd = "#27272a"
+  home_section_even = "#2e2e32"

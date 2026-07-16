@@ -1,0 +1,29 @@
+{{/* Table shortcode — updated for Hugo 0.136+ (getCSV removed) */}}
+{{ $src := .Get "src" | default (.Get 0) }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $header := .Get "header" | default true }}
+
+{{ if $src }}
+  {{ $data := "" }}
+  {{ if strings.HasSuffix $src ".csv" }}
+    {{ with resources.Get $src }}
+      {{ $data = . | transform.Unmarshal (dict "delimiter" ",") }}
+    {{ end }}
+  {{ end }}
+  {{ with $data }}
+    <table>
+      {{ if $caption }}<caption>{{ $caption }}</caption>{{ end }}
+      {{ range $i, $row := . }}
+        {{ if and (eq $i 0) $header }}
+          <thead><tr>{{ range $row }}<th>{{ . }}</th>{{ end }}</tr></thead>
+          <tbody>
+        {{ else }}
+          <tr>{{ range $row }}<td>{{ . }}</td>{{ end }}</tr>
+        {{ end }}
+      {{ end }}
+      </tbody>
+    </table>
+  {{ end }}
+{{ else }}
+  {{ .Inner | markdownify }}
+{{ end }}

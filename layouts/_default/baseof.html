@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "en-us" }}" {{with site.Params.text_direction}}dir="{{.}}"{{end}}>
+
+{{ partial "site_head" . }}
+
+<body id="top" {{with .Type}}data-type="{{.}}"{{end}} {{with .Section}}data-section="{{.}}"{{end}} data-page-id="{{ .RelPermalink | urlize }}">
+
+  {{ partial "navbar" . }}
+
+  <div class="page-body">
+    {{block "main" .}}{{end}}
+  </div>
+
+  <footer class="site-footer">
+    <div class="container" style="text-align: center; padding: 1.5rem 0; font-size: 0.85rem; color: #a1a1aa;">
+      <p style="margin: 0;">
+        © {{ now.Year }} Julia J. Conti.
+        This work is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" style="color: #00a8a8;">CC BY NC ND 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  {{ partial "site_js" . }}
+
+</body>
+</html>

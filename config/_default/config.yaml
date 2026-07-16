@@ -1,0 +1,62 @@
+title: Julia J. Conti
+baseURL: 'https://www.juliajconti.com'
+
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+enableGitInfo: false
+summaryLength: 30
+
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+
+permalinks:
+  event: '/talk/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest]
+  section: [HTML, RSS]
+
+imaging:
+  resampleFilter: lanczos
+  quality: 80
+  anchor: smart
+
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
+
+markup:
+  _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: false
+
+security:
+  _merge: deep
+
+sitemap:
+  _merge: deep
