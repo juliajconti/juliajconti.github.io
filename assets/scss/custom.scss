@@ -145,6 +145,15 @@ footer a, .site-footer a {
   display: none !important;
 }
 
+// ── Research cards — responsive columns ───────────────────────────────────
+@media (max-width: 576px) {
+  .pub-columns { columns: 1 !important; }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .pub-columns { columns: 2 !important; }
+}
+
 // ── Research cards — prevent grid item stretching ─────────────────────────
 #research > .container > div > div {
   height: fit-content !important;
@@ -157,6 +166,19 @@ footer a, .site-footer a {
   aspect-ratio: 1 / 1 !important;
   object-fit: cover !important;
 }
+#profile .portrait-title {
+  margin-bottom: 0.5rem !important;
+}
+
+#profile .network-icon {
+  margin-top: 0.5rem !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 0.75rem !important;
+}
+  
 #profile .portrait-title h2 {
   font-size: 1.1rem !important;
 }

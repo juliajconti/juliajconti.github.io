@@ -92,10 +92,10 @@
         <h1 style="margin: 0;">Research</h1>
       </div>
     </div>
-    <div id="pub-masonry" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 0 2rem; align-items: start;">
+    <div class="pub-columns" style="columns: 3; column-gap: 2rem; padding: 0 2rem;">
       {{ range $sorted }}
       {{ $images := .Resources.ByType "image" }}
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           {{ with $images }}
             {{ with (index . 0) }}
             <a href="{{ $.RelPermalink }}">
@@ -121,53 +121,6 @@
       </div>
       {{ end }}
     </div>
-
-<script>
-// Masonry layout — keeps left-to-right order, removes row gaps
-function masonryLayout() {
-  var grid = document.getElementById('pub-masonry');
-  if (!grid) return;
-  var cols = 3;
-  var colHeights = [0, 0, 0];
-  var gap = 32; // 2rem in px
-  var colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
-
-  grid.style.position = 'relative';
-  grid.style.display = 'block';
-
-  var cards = grid.querySelectorAll('.pub-card');
-  var totalHeight = 0;
-
-  cards.forEach(function(card, i) {
-    var col = i % cols;
-    var top = colHeights[col];
-    var left = col * (colWidth + gap);
-
-    card.style.position = 'absolute';
-    card.style.width = colWidth + 'px';
-    card.style.top = top + 'px';
-    card.style.left = left + 'px';
-
-    colHeights[col] += card.offsetHeight + gap;
-    totalHeight = Math.max(totalHeight, colHeights[col]);
-  });
-
-  grid.style.height = totalHeight + 'px';
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Wait for images to load before calculating heights
-  var imgs = document.querySelectorAll('#pub-masonry img');
-  var loaded = 0;
-  if (imgs.length === 0) { masonryLayout(); return; }
-  imgs.forEach(function(img) {
-    if (img.complete) { loaded++; if (loaded === imgs.length) masonryLayout(); }
-    else { img.addEventListener('load', function() { loaded++; if (loaded === imgs.length) masonryLayout(); }); }
-  });
-});
-
-window.addEventListener('resize', masonryLayout);
-</script>
   </div>
 </div>
 {{ end }}
