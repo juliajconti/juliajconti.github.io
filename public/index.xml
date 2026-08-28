@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>What&#39;s going on? Surprising difficulties in complex relational rule discovery</title>
+      <title>Confidence in Context: How Self-Beliefs Shape Discovery</title>
       <link>http://localhost:1313/publication/csc26/</link>
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/csc26/</guid>
@@ -66,6 +66,14 @@
       <link>http://localhost:1313/publication/cds22/</link>
       <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/cds22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>http://localhost:1313/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cv/</guid>
       <description></description>
     </item>
     

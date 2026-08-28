@@ -15,6 +15,10 @@
     <lastmod>2026-07-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:1313/publication/csc26/</loc>
+    <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/authors/admin/</loc>
     <lastmod>2026-07-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,10 +36,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/publication/</loc>
-    <lastmod>2026-07-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:1313/publication/csc26/</loc>
     <lastmod>2026-07-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -104,6 +104,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/home/</loc>

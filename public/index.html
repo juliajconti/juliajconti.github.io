@@ -531,8 +531,6 @@ document.addEventListener('DOMContentLoaded', function() {
           
           
           
-            
-          
 
           
 
@@ -550,7 +548,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
 
           <li class="nav-item">
-            <a class="nav-link " href="/uploads/resume.pdf"><span>CV</span></a>
+            <a class="nav-link " href="/cv/"><span>CV</span></a>
           </li>
 
           
@@ -711,8 +709,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="col-12 col-lg-7" style="padding: 0 2rem;">
         <div id="about-text">
           <div class="article-style" style="font-size: 0.8rem;">
-            <p>I am a doctoral candidate in cognitive psychology at Carnegie Mellon University and a member of the <a href="https://learnlab.org" target="_blank" rel="noopener">LearnLab</a> and the <a href="https://www.theoaklab.org/" target="_blank" rel="noopener">OAK Lab</a> in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain &amp; Cognitive Science from the University of Illinois, Urbana-Champaign. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.</p>
-<p>Over the past five years this work has investigated the environments that facilitate discovery for adults, children, and non-human primates. My dissertation work specifically examines how metacognitive factors like certainty in the information available shape the way learners navigate a problem and regulate their own discovery process.</p>
+            <p>I am a postdoctoral researcher contributing to the Proofs and Reason project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.</p>
+<p>My doctoral work at CMU was completed as a member of the <a href="https://www.theoaklab.org/" target="_blank" rel="noopener">OAK Lab</a> and <a href="https://learnlab.org" target="_blank" rel="noopener">LearnLab</a> in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain &amp; Cognitive Science from the University of Illinois, Urbana-Champaign.</p>
+<p>Over the past five years my work has investigated the environments that facilitate discovery for adults, children, and non-human primates. My dissertation work specifically examined how metacognitive factors like certainty about the information available shape the way learners navigate a problem and regulate their own discovery process.</p>
 
           </div></div>
       </div>
@@ -732,14 +731,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <h1 style="margin: 0;">Research</h1>
       </div>
     </div>
-    <div id="pub-masonry" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; padding: 0 2rem; align-items: start;">
+    <div class="pub-columns" style="columns: 3; column-gap: 2rem; padding: 0 2rem;">
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
           <div style="padding: 1.25rem;">
             <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
-              <a href="/publication/csc26/" style="color: #00a8a8;">What&#39;s going on? Surprising difficulties in complex relational rule discovery</a>
+              <a href="/publication/csc26/" style="color: #00a8a8;">Confidence in Context: How Self-Beliefs Shape Discovery</a>
             </h3>
             <div style="font-size: 0.82rem; color: #a1a1aa; margin-bottom: 0.6rem;">
               
@@ -757,7 +756,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
             
             <a href="/">
@@ -786,7 +785,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
           <div style="padding: 1.25rem;">
             <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
@@ -808,7 +807,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
             
             <a href="/">
@@ -837,7 +836,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
           <div style="padding: 1.25rem;">
             <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
@@ -859,7 +858,7 @@ Caroline Kaicher, <strong>Julia J. Conti</strong>, Abhishek Dedhe, Lauren Aulet,
       </div>
       
       
-      <div class="pub-card" style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid;">
+      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
           
             
             <a href="/">
@@ -888,53 +887,6 @@ Caroline Kaicher, <strong>Julia J. Conti</strong>, Abhishek Dedhe, Lauren Aulet,
       </div>
       
     </div>
-
-<script>
-
-function masonryLayout() {
-  var grid = document.getElementById('pub-masonry');
-  if (!grid) return;
-  var cols = 3;
-  var colHeights = [0, 0, 0];
-  var gap = 32; 
-  var colWidth = (grid.offsetWidth - gap * (cols - 1)) / cols;
-
-  grid.style.position = 'relative';
-  grid.style.display = 'block';
-
-  var cards = grid.querySelectorAll('.pub-card');
-  var totalHeight = 0;
-
-  cards.forEach(function(card, i) {
-    var col = i % cols;
-    var top = colHeights[col];
-    var left = col * (colWidth + gap);
-
-    card.style.position = 'absolute';
-    card.style.width = colWidth + 'px';
-    card.style.top = top + 'px';
-    card.style.left = left + 'px';
-
-    colHeights[col] += card.offsetHeight + gap;
-    totalHeight = Math.max(totalHeight, colHeights[col]);
-  });
-
-  grid.style.height = totalHeight + 'px';
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  
-  var imgs = document.querySelectorAll('#pub-masonry img');
-  var loaded = 0;
-  if (imgs.length === 0) { masonryLayout(); return; }
-  imgs.forEach(function(img) {
-    if (img.complete) { loaded++; if (loaded === imgs.length) masonryLayout(); }
-    else { img.addEventListener('load', function() { loaded++; if (loaded === imgs.length) masonryLayout(); }); }
-  });
-});
-
-window.addEventListener('resize', masonryLayout);
-</script>
   </div>
 </div>
 
