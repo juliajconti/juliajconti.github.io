@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container" style="text-align:center; padding-top:1.5rem; padding-bottom:1rem;">
+  <a class="btn btn-outline-primary btn-sm" href="/uploads/resume.pdf" download>
+    <i class="fas fa-download"></i> Download CV (PDF)
+  </a>
+</div>
+<div style="width:100%; height:85vh; padding:0; margin:0;">
+  <iframe
+    src="https://docs.google.com/document/d/e/2PACX-1vSZOQ5yM1PJrGkVQNx5wJZcKYczunxwh3RxC9pEEz4FInf1bsWXuhqokyJtYh9V2A/pub?embedded=true"
+    width="100%"
+    height="100%"
+    style="border:none; display:block;"
+    scrolling="auto">
+  </iframe>
+</div>
+{{ end }}

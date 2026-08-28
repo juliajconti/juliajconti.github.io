@@ -63,6 +63,8 @@ highlight_name: true
 email: juliajconti@gmail.com
 ---
 
-I am a doctoral candidate in cognitive psychology at Carnegie Mellon University and a member of the [LearnLab](https://learnlab.org) and the [OAK Lab](https://www.theoaklab.org/) in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain & Cognitive Science from the University of Illinois, Urbana-Champaign. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
+I am a postdoctoral researcher contributing to the Proofs and Reason project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
 
-Over the past five years this work has investigated the environments that facilitate discovery for adults, children, and non-human primates. My dissertation work specifically examines how metacognitive factors like certainty in the information available shape the way learners navigate a problem and regulate their own discovery process.
+My doctoral work at CMU was completed as a member of the [OAK Lab](https://www.theoaklab.org/) and [LearnLab](https://learnlab.org) in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain & Cognitive Science from the University of Illinois, Urbana-Champaign. 
+
+Over the past five years my work has investigated the environments that facilitate discovery for adults, children, and non-human primates. My dissertation work specifically examined how metacognitive factors like certainty about the information available shape the way learners navigate a problem and regulate their own discovery process.
