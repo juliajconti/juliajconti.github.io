@@ -10,7 +10,7 @@ last_name: Conti
 superuser: true
 
 # Role/position/tagline
-role: Doctoral Candidate
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -63,7 +63,7 @@ highlight_name: true
 email: juliajconti@gmail.com
 ---
 
-I am a postdoctoral researcher contributing to the Proofs and Reason project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
+I am a postdoctoral researcher contributing to the [Proofs and Reason](https://proofsandreasons.io/) project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
 
 My doctoral work at CMU was completed as a member of the [OAK Lab](https://www.theoaklab.org/) and [LearnLab](https://learnlab.org) in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain & Cognitive Science from the University of Illinois, Urbana-Champaign. 
 
