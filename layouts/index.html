@@ -3,37 +3,51 @@
 {{/* ── About / Bio ── */}}
 {{ with site.GetPage "/authors/admin" }}
 {{ $banner := resources.Get "media/banner-180.jpg" }}
-<div id="about" style="background-color: #27272a; {{ with $banner }}background-image: url('{{ .RelPermalink }}'); background-size: cover; background-position: center;{{ end }} min-height: 40vh; padding: 4rem 0 3rem 0;">
+<div id="about" class="about-hero" {{ with $banner }} data-banner="{{ .RelPermalink }}" {{ end }}
+  style="background-color: #27272a; min-height: 40vh; padding: 4rem 0 3rem 0;">
   <div class="container">
     <div class="row" style="padding-top: 8%;">
       <div class="col-12 col-lg-4" style="padding: 0 2rem; text-align: center; margin-top: -3%;">
         <div id="profile" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
           {{ $avatar := .Resources.ByType "image" }}
           {{ with $avatar }}
-            {{ with (index . 0) }}
-              <img class="avatar avatar-circle" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
-            {{ end }}
+          {{ with (index . 0) }}
+          <img class="avatar avatar-circle" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+          {{ end }}
           {{ else }}
-            <img class="avatar avatar-circle" src="{{ "authors/admin/avatar.jpg" | relURL }}" alt="{{ $.Title }}">
+          <img class="avatar avatar-circle" src="{{ " authors/admin/avatar.jpg" | relURL }}" alt="{{ $.Title }}">
           {{ end }}
 
           <div class="portrait-title">
             <h2>{{ .Title }}</h2>
             {{ with .Params.role }}<h3>{{ . }}</h3>{{ end }}
             {{ range .Params.organizations }}
-              <h3>
-                {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+            <h3>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
                 {{ .name }}
                 {{ if .url }}</a>{{ end }}
-              </h3>
+            </h3>
             {{ end }}
           </div>
 
           <ul class="network-icon" aria-hidden="true">
             {{ range .Params.social }}
+            {{ $pack := .icon_pack }}
+            {{ $prefix := $pack }}
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}{{ $prefix = "fa" }}{{ end }}
             <li>
-              <a href="{{ .link }}"{{ if strings.HasPrefix .link "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .icon }}">
-                <i class="{{ .icon_pack }} fa-{{ .icon }} big-icon"></i>
+              <a href="{{ .link }}" {{ if strings.HasPrefix .link "http" }} target="_blank" rel="noopener" {{ end }}
+                aria-label="{{ .icon }}" style="display:inline-flex; align-items:center; justify-content:center;">
+                {{ if eq .icon "google-scholar" }}
+                <svg class="big-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  style="width:0.95rem; height:0.95rem; fill:currentColor; display:block;">
+                  <title>Google Scholar</title>
+                  <path
+                    d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+                </svg>
+                {{ else }}
+                <i class="{{ $pack }} {{ $prefix }}-{{ .icon }} big-icon"></i>
+                {{ end }}
               </a>
             </li>
             {{ end }}
@@ -79,6 +93,19 @@
     </div>
   </div>
 </div>
+{{ if $banner }}
+<script>
+  (() => {
+    const el = document.getElementById("about");
+    if (!el) return;
+    const banner = el.dataset.banner;
+    if (!banner) return;
+    el.style.backgroundImage = "url('" + banner + "')";
+    el.style.backgroundSize = "cover";
+    el.style.backgroundPosition = "center";
+  })();
+</script>
+{{ end }}
 {{ end }}
 
 {{/* ── Research / Publications — nogsky-style grid cards ── */}}
@@ -95,29 +122,33 @@
     <div class="pub-columns" style="columns: 3; column-gap: 2rem; padding: 0 2rem;">
       {{ range $sorted }}
       {{ $images := .Resources.ByType "image" }}
-      <div style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
-          {{ with $images }}
-            {{ with (index . 0) }}
-            <a href="{{ $.RelPermalink }}">
-              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}"
-                style="width: 100%; height: 200px; object-fit: cover; display: block;">
-            </a>
-            {{ end }}
-          {{ end }}
-          <div style="padding: 1.25rem;">
-            <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
-              <a href="{{ .RelPermalink }}" style="color: #00a8a8;">{{ .Title }}</a>
-            </h3>
-            <div style="font-size: 0.82rem; color: #a1a1aa; margin-bottom: 0.6rem;">
-              {{ partial "pub_authors" . }}
-              <em>{{ .Params.publication }}</em>{{ with .Params.date }}, {{ (time .).Year }}{{ end }}.
-            </div>
-            <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-              {{ with .Params.url_pdf }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}">PDF</a>{{ end }}
-              {{ with .Params.doi }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
-              {{ range .Params.links }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .url }}" target="_blank">{{ .name }}</a>{{ end }}
-            </div>
+      <div
+        style="background: #2e2e32; border-radius: 8px; overflow: hidden; break-inside: avoid; margin-bottom: 2rem; display: block;">
+        {{ with $images }}
+        {{ with (index . 0) }}
+        <a href="{{ $.RelPermalink }}">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}"
+            style="width: 100%; height: 200px; object-fit: cover; display: block;">
+        </a>
+        {{ end }}
+        {{ end }}
+        <div style="padding: 1.25rem;">
+          <h3 style="margin: 0 0 0.6rem 0; font-size: 1rem; line-height: 1.4;">
+            <a href="{{ .RelPermalink }}" style="color: #00a8a8;">{{ .Title }}</a>
+          </h3>
+          <div style="font-size: 0.82rem; color: #a1a1aa; margin-bottom: 0.6rem;">
+            {{ partial "pub_authors" . }}
+            <em>{{ .Params.publication }}</em>{{ with .Params.date }}, {{ (time .).Year }}{{ end }}.
           </div>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+            {{ with .Params.url_pdf }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ . }}">PDF</a>{{
+            end }}
+            {{ with .Params.doi }}<a class="btn btn-outline-primary btn-page-header btn-sm"
+              href="https://doi.org/{{ . }}" target="_blank">DOI</a>{{ end }}
+            {{ range .Params.links }}<a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ .url }}"
+              target="_blank">{{ .name }}</a>{{ end }}
+          </div>
+        </div>
       </div>
       {{ end }}
     </div>

@@ -38,11 +38,6 @@ education:
 
 # Social/Academic Networking links
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:juliajconti@gmail.com'
-    display:
-      header: true
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=1N84zYkAAAAJ&hl=en&inst=3203679203499159833
@@ -55,6 +50,9 @@ social:
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/juliajconti
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:juliajconti@gmail.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -63,7 +61,7 @@ highlight_name: true
 email: juliajconti@gmail.com
 ---
 
-I am a postdoctoral researcher contributing to the [Proofs and Reason](https://proofsandreasons.io/) project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
+I am a postdoctoral researcher contributing to the [Proofs and Reasons](https://proofsandreasons.io/) project at Carnegie Mellon University. My research focuses on discovery learning: the acquisition of relational rules in instruction-less contexts.
 
 My doctoral work at CMU was completed as a member of the [OAK Lab](https://www.theoaklab.org/) and [LearnLab](https://learnlab.org) in the Human-Computer Interaction Institute. I graduated in 2020 with my BSc in Brain & Cognitive Science from the University of Illinois, Urbana-Champaign. 
 
